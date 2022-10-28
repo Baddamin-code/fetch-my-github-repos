@@ -8,7 +8,7 @@ const Repos = (props) => {
     repos.length !== 0 ? (
       repos.map((repo) => 
         <ul key={repo.id} className="w-80 p-4 text-gray-500 m-2 bg-blue-800">
-        <li className="truncate hover:text-gray-300"><a href={repo.html_url}> Repo Name: {repo.name}</a></li>
+        <li className="truncate">Repo Name: <a href={repo.html_url} className="hover:text-gray-300">{repo.name}</a></li>
         <li className="truncate">Language: {repo.language}</li>
         <li className="truncate">Visibility: {repo.visibility}</li>
         <li className="truncate">ID: {repo.id}</li>
