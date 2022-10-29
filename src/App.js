@@ -34,12 +34,9 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route path="/repos" element={<Repos repos={repos} />}></Route>
-            <Route path="*" element={<PageNotFound />}>
-              
-            </Route>
+            <Route path="*" element={<PageNotFound />}></Route>
           </Routes>
         </ErrorBoundary>
-        {/* <Repos repos={repos}/> */}
       </div>
     </>
   );
