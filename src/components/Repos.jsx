@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Repos = (props) => {
   const { repos } = props;
@@ -15,7 +16,7 @@ const Repos = (props) => {
         </ul>
       )
     ) : (
-      <li>No Repos Found</li>
+      <LoadingSpinner />
     );
 
   return (
