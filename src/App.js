@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Repos, Home, Navbar } from "./components/Aggregate";
+import { Repos, Home, Navbar, ErrorBoundary } from "./components/Aggregate";
 
 const url = ` https://api.github.com/users/baddamin-code/repos`;
 
@@ -23,12 +23,16 @@ const App = () => {
   return (
     <>
     <div className="App">
+      <ErrorBoundary>
       <div><Navbar /></div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/repos" element={<Repos />}></Route>
+        <Route path="/repos" element={<Repos  repos={repos}/>}></Route>
+        {/* <Route path="/repos" element={<Repos  repos={repos}/>}></Route>
+        <Route path="/repos" element={<Repos  repos={repos}/>}></Route> */}
       </Routes>
-      <Repos repos={repos}/>
+      </ErrorBoundary>
+      {/* <Repos repos={repos}/> */}
     </div>
     </>
   );
