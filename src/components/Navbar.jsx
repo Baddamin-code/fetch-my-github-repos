@@ -16,9 +16,9 @@ const Navbar = () => {
       </div>
       <div className="md:flex">
         <ul className="flex flex-col md:flex-row">
-          <li className="px-4"><Link to="/">Home</Link></li>
-          <li className="px-4"><Link to="/repos">Repos</Link></li>
-          <li className="px-4"><Link to="/repos">404 test</Link></li>
+          <li className="px-4  hover:text-gray-500"><Link to="/">Home</Link></li>
+          <li className="px-4  hover:text-gray-500"><Link to="/repos">Repos</Link></li>
+          <li className="px-4  hover:text-gray-500"><Link to="*">404 test</Link></li>
         </ul>
       </div>
 
