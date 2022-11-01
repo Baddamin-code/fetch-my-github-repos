@@ -1,17 +1,20 @@
 PROJECT INFO
 
-This is a project that gets github repository data for user "Baddamin-code" from https://api.github.com/users/baddamin-code/repos
+This is a project that gets github repository data for user "Baddamin-code" from https://api.github.com/users/baddamin-code/repos.
+
+The project is AltSchool's Frontend Second Semester Examination Project
 
 
-WHAT WE USED
+WHAT I USED
 
-https://api.github.com/
+I fetched the API from https://api.github.com/
 
-React Router
+I'm rendering the app's UI using React's Browser Router
 
-Tailwind CSS
+All styles are added using Tailwind CSS
 
-Error Boundary
+I wrapped the components in an Error Boundary tag to catch errors.
 
-404 page
+There's a 404 page to inform users when a page does not exist
 
+Hosting URL: https://api-repo-fetch-github.web.app
