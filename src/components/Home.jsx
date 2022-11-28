@@ -7,7 +7,7 @@ const Home = () => {
       <h1 className="text-xl text-gray-500 tracking-wide">
         Hi, My name is{" "}
         <span className="text-2xl text-green-900">
-          Al-ameen Omogbolahan Raji
+          Raji Al-ameen Omogbolahan
         </span>{" "}
         <br />
         Student ID: <span className="text-green-900">ALT/SOE/022/2659</span>
